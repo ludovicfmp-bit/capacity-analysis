@@ -117,18 +117,18 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     sustain = st.number_input(
         "SUSTAIN 11 (avions/min)", 
-        min_value=0, 
-        max_value=30,
+        min_value=0.0, 
+        max_value=30.0,
         value=default_sustain, 
-        step=1
+        step=0.1
     )
 with col2:
     peak = st.number_input(
         "PEAK 11 (avions/min)", 
-        min_value=0, 
-        max_value=30,
+        min_value=0.0, 
+        max_value=30.0,
         value=default_peak, 
-        step=1
+        step=0.1
     )
 with col3:
     st.metric("📌 Source seuils", seuils_source)
