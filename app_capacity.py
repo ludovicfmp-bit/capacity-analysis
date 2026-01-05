@@ -102,6 +102,7 @@ try:
     st.info("Continuer l'analyse malgré l'incohérence...")
     # st.stop()  # Désactivé temporairement
 
+
     tv_detected = tv_load
     st.success(f"✅ **TV détecté : {tv_detected}**")
 
