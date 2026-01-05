@@ -98,9 +98,9 @@ try:
 
     # Vérifier que c'est le même TV
     if tv_load != tv_occ:
-        st.error(f"⚠️ **Les fichiers ne correspondent pas au même TV !**")
-        st.error(f"LOAD : {tv_load} ≠ OCC : {tv_occ}")
-        st.stop()
+    st.warning(f"⚠️ TV différent détecté : LOAD={tv_load}, OCC={tv_occ}")
+    st.info("Continuer l'analyse malgré l'incohérence...")
+    # st.stop()  # Désactivé temporairement
 
     tv_detected = tv_load
     st.success(f"✅ **TV détecté : {tv_detected}**")
